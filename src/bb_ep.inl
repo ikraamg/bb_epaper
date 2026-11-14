@@ -820,6 +820,7 @@ const uint8_t epd75_init_sequence_partial[] PROGMEM = {
     0x00 // end of table
 };
 const uint8_t epd75_init_sequence_fast[] PROGMEM = {
+    0x05, UC8151_BTST, 0x17, 0x17, 0x17, 0x17, // booster at the chip default; some panels store C1 0x3D in OTP, which blanks fast refreshes
     0x05, UC8151_PWR, 0x07, 0x07, 0x3f, 0x3f,
     0x02, 0x82, 0x1e, // VCOM DC (-1.60V)
     0x01, UC8151_PON, // power on
