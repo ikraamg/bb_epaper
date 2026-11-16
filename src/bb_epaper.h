@@ -303,6 +303,7 @@ enum {
     EP74YR_480x800, // Pervasive Displays E2741QS0B3 (741-QS-0B) Spectra 4
     EP42YR_400x300_ST7306, // Sitronix 4-color reflective LCD
     EP426B_800x480_4GRAY, // TopWin 4.26" B/W 800x480
+    EP75_800x480_BOOST, // older panel, booster needed for fast updates
     EP_PANEL_COUNT
 };
 #ifdef FUTURE
